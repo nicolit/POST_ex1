@@ -103,9 +103,8 @@ public class MainActivity extends Activity {
             messageArray.add( message);
             chatText.setText("");
             side = !side;
-            throw new Exception();
         } catch ( Exception err) {
-            alertView("Error: Cannot add message. " + err.getMessage());
+            alertView("Error: Cannot add message. ");
         }
         return true;
     }
